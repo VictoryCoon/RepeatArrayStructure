@@ -39,12 +39,13 @@ int main()
 
 	ars.PrintAll();
 
-	// (...)Q R S T U(...) >>> (...)Q R J S T U(...)
+	// (...)Q R S T U(...) >>> (...)Q R [J] S T U(...)
 	ars.Insert(18, 'J');
 
 	ars.PrintAll();
 
 	// 'H'
+	// (...)F G [H] I J K(...) >>> (...)F G I J K(...)
 	ars.Remove(7, &out);
 
 	ars.PrintAll();
